@@ -133,4 +133,4 @@ Median
 #2d. Which bin includes the value of Q3?
 At least 4 hours, but less than 5 hours
 
-#Question 3: 
+
