@@ -80,3 +80,7 @@ prop.table(twoway2,1)
 
 #Problem Set
 
+    #Generate a table to show the number of artists that are "popular" (100K+ FB)
+table(acl$Facebook.100K)
+table(acl$Facebook.100k, acl$Age.Group)
+prop.table(table(acl$Facebook.100k, acl$Age.Group),2)
