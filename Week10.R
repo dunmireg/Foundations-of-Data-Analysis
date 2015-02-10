@@ -42,5 +42,28 @@ chisq.test(tweet_genre)
 
 #Problem Set
 
+    #Has the proportion of female performers on ACL changed in the past two years
+acl$Recent[acl$Year < 2012] <- 0
+acl$Recent[acl$Year >= 2012] <- 1
+
+femaleprop <- table(acl$Gender, acl$Recent)
+
+chisq.test(femaleprop)$expected
+
+chisq.test(femaleprop, correct = FALSE)
+
+    #Crossing white and yellow summer squash
+squash <- c(152, 39, 14)
+predicted <- c(0.75, 0.15, 0.10)
+
+chisq.test(squash, p = predicted)$expected
+
+chisq.test(squash, p = predicted)
+
+    #Gender and dominant hand - imported 
+gendDom <- table(domHand$Gender, domHand$Dominant.Hand)
+
+chisq.test(gendDom)$expected
+
 
 
